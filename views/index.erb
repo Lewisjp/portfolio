@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Lewis J. Paul
+  	</title>
+  	<link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada' rel='stylesheet' type='text/css'>
+  	<link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+ <body>
+
+ 	<div class="top">
+ 		<h1><p>Jeremy Lewis</p><h1>
+ 	</div>
+
+
+ 	<div class="main">
+
+ 		<div class="photo">
+ 			<a href=<%= @Portfolio.random_link %>>
+				<img id="photo" alt="screenshot" height="372" width="410" align="middle" src=<%=@Portfolio.random_photo %>>
+			</a>
+			<div id="caption">
+				<b>
+				<%= @Portfolio.random_caption %>
+				</b>
+			</div>
+		</div>
+
+
+		<div class="about">
+			<div id="details">
+				<!-- Intro -->
+				<h3 align="center">Welcome to the show</h3>
+
+				<p>I'm currently a fellow at the <a href="http://flatironschool.com/"  target="_blank">Flatiron School</a> in New York, where I'm learning to code with awesome people.  </p>
+
+				<p>Feel free to try out some of my work by clicking on the image to the left.  Other details about me are linked below.</p>
+
+				<br><br>
+				<!-- github -->
+					<p align="middle">
+						<a href="https://github.com/Lewisjp"  target="_blank">
+							<img id="photo" alt="github link" height="37" width="41" align="middle" src='../img/octocat.png'>  Github  
+						</a>
+					</p>
+
+				<!-- linkedin -->
+					<p align="middle">
+					<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+					<script type="IN/MemberProfile" data-id="http://www.linkedin.com/pub/jeremy-lewis/12/1b3/6a1" data-format="click" data-text="Jeremy Lewis" data-related="false"></script>
+					</p>
+				<!-- twitter -->
+					<p align="middle">
+					<a href="https://twitter.com/LewisJPaul" target="_blank">Twitter Feed</a><br>
+					<a href="https://twitter.com/LewisJPaul" class="twitter-follow-button" data-show-count="false">Follow @LewisJPaul</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</p>
+			</div>
+		</div>
+
+		<div class="bottom">
+		</div>
+
+	</div>
+
+</body>
+</html>

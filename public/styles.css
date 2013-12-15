@@ -1,0 +1,129 @@
+body {
+	background-image: url('/img/background.jpg');
+	font-family: Ariel, Tahoma, Verdana;
+	font-size: 12px;
+}
+
+div {
+	display: block;
+}
+
+.top {
+	color: white;
+	font-size: 20px;
+	text-shadow: 5px 5px #800000;
+	font-family: 'Montserrat Subrayada', sans-serif;
+	text-align: center; 
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.main {
+	width: 1024px;
+	margin: 0 auto;
+		margin-top: 0px;
+		margin-right: auto;
+		margin-bottom: 0px;
+		margin-left: auto;
+}
+
+.photo {
+
+	float: left;
+	width:410px;
+	padding: 20px;
+		padding-top: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+	border: 1px solid;
+		#853333;
+		border-top-color: rgb( 133, 51, 51);
+			border-top-style: solid;
+			border-top-width: 1px;
+		border-right-color: rgb( 133, 51, 51); 
+			border-right-style: solid;
+			border-right-width: 1px;
+		border-bottom-color: rgb( 133, 51, 51); 
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+		border-left-color: rgb( 133, 51, 51); 
+			border-left-style: solid;
+			border-left-width: 1px;
+	border-radius: 2px;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+	margin: 30px 70px 0 0;
+		margin-top: 30px;
+		margin-right: 70px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+	background: #FFF;
+		background-image: initial;
+		background-position-x: initial;
+		background-position-y: initial;
+		background-size: initial;
+		background-repeat-x: initial;
+		background-repeat-y: initial;
+		background-attachment: initial;
+		background-origin: initial;
+		background-clip: initial;
+		background-color: rgb( 133, 51, 51);
+	overflow: hidden;
+		overflow-x: hidden;
+		overflow-y: hidden;
+}
+
+#caption {
+	padding-top: 9px;
+}
+
+.about {
+	float: left;
+	width: 500px;
+	margin-top: 30px;
+
+	background: #FFF;
+		background-image: initial;
+		background-position-x: initial;
+		background-position-y: initial;
+		background-size: initial;
+		background-repeat-x: initial;
+		background-repeat-y: initial;
+		background-attachment: initial;
+		background-origin: initial;
+		background-clip: initial;
+		background-color: rgb( 255,	255, 255);
+	overflow: hidden;
+		overflow-x: hidden;
+		overflow-y: hidden;
+
+}
+
+#details {
+	padding: 20px;
+	border-radius: 5px;
+	border: 1px solid #c4c4c4;
+}
+
+ul, p, h1 {
+	position: relative;
+}
+
+.bottom {
+	color: white;
+	font-size: 20px;
+	text-shadow: 5px 5px #800000;
+	font-family: 'Montserrat Subrayada', sans-serif;
+	text-align: center; 
+	height: 20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+}
