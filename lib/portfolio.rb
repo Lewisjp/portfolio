@@ -10,12 +10,17 @@ class Portfolio
 	end
 
 	def random_caption
-		caption_result = ["caption_one","caption_two","caption_three"]
+		caption_result = [
+		"Rock Paper Scissors Lizard Spock, is a twist on the classic playground game made popular by the TV show 
+The Big Bang Theory.  Try your luck.",
+		"Above is a self portrait.  I'm currently in the process of bringing my work to the web.  As I do, this slideshow will be updated.",
+		"I'm currently in the process of bringing my work to the web.  As I do, this slideshow will be updated."
+		]
 		caption_result[random_element]
 	end
 
 	def random_link
-		link_result = ["'http://www.google.com'","'http://www.facebook.com'","'http://www.sinfest.net'"]
+		link_result = ["'http://r-p-s-l-s.herokuapp.com/'","'/'","'/'"]
 		link_result[random_element]
 	end
 

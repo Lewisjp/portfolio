@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<title>Lewis J. Paul
+  	<title>Jeremy Lewis
   	</title>
   	<link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada' rel='stylesheet' type='text/css'>
   	<link rel="stylesheet" type="text/css" href="styles.css">
+  	<meta http-equiv="refresh" content="15" >
   </head>
  <body>
 
@@ -16,13 +17,11 @@
  	<div class="main">
 
  		<div class="photo">
- 			<a href=<%= @Portfolio.random_link %>>
+ 			<a href=<%= @Portfolio.random_link %>  target="_blank">
 				<img id="photo" alt="screenshot" height="372" width="410" align="middle" src=<%=@Portfolio.random_photo %>>
 			</a>
 			<div id="caption">
-				<b>
 				<%= @Portfolio.random_caption %>
-				</b>
 			</div>
 		</div>
 
@@ -46,8 +45,9 @@
 
 				<!-- linkedin -->
 					<p align="middle">
-					<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-					<script type="IN/MemberProfile" data-id="http://www.linkedin.com/pub/jeremy-lewis/12/1b3/6a1" data-format="click" data-text="Jeremy Lewis" data-related="false"></script>
+						<a href="https://www.linkedin.com/pub/jeremy-lewis/12/1b3/6a1/"  target="_blank">
+							<img id="photo" alt="linkedin link" height="24" width="28" align="middle" src='../img/linkedin.png'>  LinkedIn  
+						</a>
 					</p>
 				<!-- twitter -->
 					<p align="middle">
