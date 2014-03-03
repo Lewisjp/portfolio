@@ -19,6 +19,14 @@ div {
 }
 
 
+.extend_menu {
+	font-size: 20px;
+	text-shadow: 5px 5px #FF8080;
+	font-family: 'Montserrat Subrayada', sans-serif;
+	text-align: center; 
+}
+
+
 .main {
 	width: 1024px;
 	margin: 0 auto;
@@ -85,6 +93,7 @@ div {
 	float: left;
 	width: 500px;
 	margin-top: 30px;
+	margin-bottom: 60px;
 
 	background: #FFF;
 		background-image: initial;
@@ -101,6 +110,7 @@ div {
 		overflow-x: hidden;
 		overflow-y: hidden;
 
+
 }
 
 #details {
@@ -114,16 +124,6 @@ ul, p, h1 {
 }
 
 .bottom {
-	color: white;
-	font-size: 20px;
-	text-shadow: 5px 5px #800000;
-	font-family: 'Montserrat Subrayada', sans-serif;
-	text-align: center; 
-	height: 20px;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-
 
 }
+
