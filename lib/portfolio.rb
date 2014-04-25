@@ -13,7 +13,7 @@ class Portfolio
 		caption_result = [
 #		"Rock Paper Scissors Lizard Spock, is a twist on the classic playground game made popular by the TV show 
 #The Big Bang Theory.  Try your luck.",
-		"Above is a self portrait.  I'm currently in the process of bringing my work to the web.  As I do, this slideshow will be updated.",
+		"Above is a self portrait.",
 		"A 'Game of Thrones' tribute.  Test your memory of classic lines.",
 		"Visiting NYC?  Check if a movie was filmed nearby where you're staying."
 		]
