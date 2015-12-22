@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>APFT</title>
+    <link rel="stylesheet" type="text/css" href="/css/apft.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="/js/apft.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+    <h1>Army Physical Fitness Standards</h1>
+    <br>
+
+    <div class="enterScores">
+
+      <p id="gender">Gender<br>
+      <input type="radio" name="gender" value="male">Male<br>
+      <input type="radio" name="gender" value="female">Female</p>
+      <p id="age">Age <select class="17-60" name="age"></select></p>
+      <hr>
+
+      <p id="pushups">Total Push-ups<br><select class="0-100" name="push-ups"></select></p>
+      <p id="situps">Total Sit-ups<br><select class="0-100" name="sit-ups"></select></p>
+
+      <p id="run">Two Mile Run<br>Total time (Minutes : Seconds)<br><select class="0-30" name="minutes"></select> : 
+      <select class="0-60" name="seconds"></select></p>
+
+      <input type="button" onclick="popup()" value="Get Score">
+    </div>
+
+    <script>
+      $(function(){
+        var $select = $(".17-60");
+        for (i=16;i<=60;i++){
+          if(i==16){
+            $select.append($('<option></option>').val(i).html(" "))
+          } else {
+            $select.append($('<option></option>').val(i).html(i))
+      }}});
+      $(function(){
+        var $select = $(".0-100");
+        for (i=0;i<=100;i++){
+            $select.append($('<option></option>').val(i).html(i))
+      }});
+      $(function(){
+        var $select = $(".0-60");
+        for (i=0;i<=60;i++){
+            $select.append($('<option></option>').val(i).html(i))
+      }});
+      $(function(){
+        var $select = $(".0-30");
+        for (i=0;i<=30;i++){
+            $select.append($('<option></option>').val(i).html(i))
+      }});
+
+      function popup() {
+        var userInput = document.getElementBy("age").value;
+        alert("hello");
+      }
+    </script>
+
+  </body>

@@ -12,4 +12,8 @@ class Display < Sinatra::Base
 		erb :index
 	end
 
+  get '/apft' do
+    erb :apft
+  end
+
 end

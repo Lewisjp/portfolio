@@ -1,4 +1,5 @@
 
+// functions
 
 var playerLevel = 1;
 var playerClass = "none";
@@ -17,4 +18,15 @@ function plutoniumDragon (playerLevel) {
   };
 };
 
+// Functional Expressions 
+
+  var powerUps = 0;
+
+  // Example of a Function Expression
+  var combatStrength = function(playerLevel, powerUps) {
+    return playerLevel + powerUps;
+  }; 
+
+  // calling the example Function Expression
+  combatStrength(playerLevel, powerUps);
 
