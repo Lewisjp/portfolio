@@ -1,0 +1,20 @@
+body {
+  text-align: center;
+  font-style: italic;
+  color: #e60000;
+}
+
+@keyframes animatedSnow {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}
+
+
+html {
+  background: url("/img/holiday/falling_snow_in_dark.jpg");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+
+  animation: animatedSnow 10s linear infinite;  
+}
+
