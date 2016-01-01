@@ -5,7 +5,10 @@
       <link rel="stylesheet" type="text/css" href=<%= @Holiday.css_path %>>
   </head>
   <body>
-
+    <%= @Holiday.todayDate.month %> /
+    <%= @Holiday.todayDate.day %> / 
+    <%= @Holiday.todayDate.year %>
+    <br>
     <%= @Holiday.bodyContent %>
 
 

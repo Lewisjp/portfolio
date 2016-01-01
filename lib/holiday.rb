@@ -1,11 +1,12 @@
 class Holiday
 
-  attr_accessor :title, :css_path, :bodyContent
+  attr_accessor :title, :css_path, :bodyContent, :todayDate
 
   def initialize
     @title = title
     @css_path = cssPath
     @bodyContent = htmlBodyContent
+    @todayDate = Time.new
   end
 
   def htmlBodyContent
