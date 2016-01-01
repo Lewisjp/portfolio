@@ -15,8 +15,7 @@ function findLongestWord(str) {
 
 
 function palindrome(str) {
-  // Good luck!
-  
+
   str = str.replace(/[^a-z0-9]+/gi,'').toLowerCase();
   
   var stringReverse = [];
@@ -35,3 +34,43 @@ function palindrome(str) {
 
 }
 
+function capitalizeEachWord(str) {
+  
+  str = str.charAt(0).toUpperCase() + str.substr(1).toLowerCase();
+  
+  var arr = str.split(" ");
+  
+  for(var i = 0; i < arr.length; i++){
+    console.log(arr[i].charAt(0));
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].substr(1).toLowerCase();
+  }
+  
+  str = arr.join(" ");  
+  
+  return str;
+}
+
+
+
+function largestElementOfNestedArrays(arr) {
+
+  var largestOfArr = [];
+  
+  // check each nested array
+  for(var k = 0; k < arr.length; k++){
+    var largestElement = 0;
+    
+    // Check each element of nested array
+    for(var v = 0; v < arr[k].length; v++){
+      if(largestElement < arr[k][v]){
+        largestElement = arr[k][v]; 
+      }
+
+    }
+
+    // add largest of element of nested array to final array
+    largestOfArr.push(largestElement);
+  }
+
+  return largestOfArr;
+}
