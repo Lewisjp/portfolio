@@ -74,3 +74,20 @@ function largestElementOfNestedArrays(arr) {
 
   return largestOfArr;
 }
+
+
+
+
+function convert(celsius) {
+  // Only change code below this line
+  var fahrenheit = celsius;
+  fahrenheit *= (9/5);
+  fahrenheit += 32;
+
+  // Only change code above this line
+  if ( typeof fahrenheit !== 'undefined' ) {
+  return fahrenheit;
+  } else {
+    return 'fahrenheit not defined';
+  }
+}
