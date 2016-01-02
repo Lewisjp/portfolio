@@ -91,3 +91,18 @@ function convert(celsius) {
     return 'fahrenheit not defined';
   }
 }
+
+
+
+function wordAtEndOfString(str, target) {
+  for(var i = str.length -1; i >= 0; i--){
+    if(str.substr(i)== target){
+      return true;
+    }
+  }
+    return false;
+}
+
+
+
+
