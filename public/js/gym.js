@@ -103,6 +103,13 @@ function wordAtEndOfString(str, target) {
     return false;
 }
 
-
+function repeatAString(str, num) {
+  var finalStr = "";
+  for(var i = num - 1; i >= 0; i--){
+    finalStr += str;
+  }
+  
+  return finalStr;
+}
 
 
