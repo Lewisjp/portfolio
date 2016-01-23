@@ -1,5 +1,6 @@
 require './lib/portfolio.rb'
 require './lib/holiday.rb'
+require 'sinatra'
 require 'sinatra/base'
 require 'bundler'
 Bundler.require
@@ -22,5 +23,8 @@ class Display < Sinatra::Base
     erb :holiday
   end
 
+  get '/odyssey' do
+    send_file 'views/volunteer/odyssey.html'
+  end
 
 end
