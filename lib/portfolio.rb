@@ -13,6 +13,7 @@ class Portfolio
 		caption_result = [
 #		"Rock Paper Scissors Lizard Spock, is a twist on the classic playground game made popular by the TV show 
 #The Big Bang Theory.  Try your luck.",
+		"NSFW - George Carlin app that checks if a Twitter feed recently used any of the 7 words you can’t say on television.",
 		"Above is a self portrait.",
 		"A 'Game of Thrones' tribute.  Test your memory of classic lines.",
 		"Visiting NYC?  Check if a movie was filmed nearby where you're staying."
@@ -23,6 +24,7 @@ class Portfolio
 	def random_link
 		link_result = [
 #			"'http://r-p-s-l-s.herokuapp.com/'",
+			"'http://sevendirtywords.herokuapp.com/'",
 			"'/'",
 			"'http://game-of-wits.herokuapp.com/'",
 			"'http://on-the-scene.herokuapp.com/'"
@@ -33,6 +35,7 @@ class Portfolio
 	def random_photo
 		photo_result = [
 #			"'/img/photo_one.jpg'",
+			"'http://sevendirtywords.herokuapp.com/img/200px-Parental_Advisory_label.svg.png'",
 			"'/img/photo_two.png'",
 			"'/img/photo_three.jpg'",
 			"'/img/photo_four.jpg'"]

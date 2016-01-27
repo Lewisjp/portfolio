@@ -27,4 +27,9 @@ class Display < Sinatra::Base
     send_file 'views/volunteer/odyssey.html'
   end
 
+  get '/imagine' do
+    send_file 'views/imagine.html'
+  end
+  
+
 end
