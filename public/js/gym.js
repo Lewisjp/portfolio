@@ -125,4 +125,29 @@ function truncateAddEllipsis(str, num) {
 }
 
 
+// Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.
+function makeSingleArrayTwoDimensionalArray(arr, size) {
+  
+  var miniArr = arr.length/size;
+  //console.log(miniArr);
+  var newArr = [];
+  
+  for(var x = 0; x < arr.length - 1; x += 1){
+    console.log("Outer loop, iteration #"+x);
+    var tempArr = [];
+    // Number of times we loop is the max number of subarrays 
+    for(var y = 0; y < miniArr; y++){
+      //console.log("Starting arr is "+arr);
+      // Start slice to return first index up to size
+      newArr.push(arr.slice(0,size));
+      // Remove starting index up to size by returning size up to last index
+      arr = arr.splice(size,arr.length);
+      //console.log("Inner loop, iteration #"+y);
+      //console.log("Ending arr is "+arr);
+      //console.log("Temp arr is "+tempArr);
+    }
 
+  }
+  
+  return newArr;
+}
