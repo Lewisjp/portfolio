@@ -151,3 +151,11 @@ function makeSingleArrayTwoDimensionalArray(arr, size) {
   
   return newArr;
 }
+
+
+function removeFirstXelements(arr, howMany) {
+  
+  arr = arr.slice(howMany, arr.length);
+  
+  return arr;
+}
