@@ -1,0 +1,26 @@
+.row {
+  padding-top: 25px;
+  padding-botton: 25px;
+
+}
+
+#debbie {
+  background: #d9d9d9;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+
+#white {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  background: #ffffff;
+}
+
+#footer {
+  padding-bottom: 15px;
+}
+
+ul {
+  list-style-type:none;
+}
