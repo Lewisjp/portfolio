@@ -159,3 +159,32 @@ function removeFirstXelements(arr, howMany) {
   
   return arr;
 }
+
+
+function lettersSecondInFirstWord(arr) {
+  // Goal - Return true if the string in the first element 
+  // of the array contains all of the letters of the string 
+  // in the second element of the array.
+  
+
+  
+  //Make sure both entries are comparable case 
+  for(x = 0; x < arr.length; x++){
+    arr[x] = arr[x].toLowerCase();
+  }
+  
+  
+  //Check if the letters of the second word are in the first
+  for(x=0; x< arr[1].length; x++){
+    if(arr[0].indexOf(arr[1][x]) == -1){
+        return false;
+    }
+  }
+  
+  if(arr.length > 2){
+    console.log(arr.length);
+    return "This method is for an array of 2 elements.";
+  }
+  
+  return true;
+}
