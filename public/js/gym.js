@@ -188,3 +188,17 @@ function lettersSecondInFirstWord(arr) {
   
   return true;
 }
+
+
+function bouncer(arr) {
+  // Don't show a false ID or empty to this bouncer.
+  
+  function notFalse(value){
+    if(value !== false || value == "" )
+       return value;
+  }
+  
+  arr = arr.filter(notFalse);
+  
+  return arr;
+}
