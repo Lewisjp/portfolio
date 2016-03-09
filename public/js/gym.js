@@ -202,3 +202,21 @@ function bouncer(arr) {
   
   return arr;
 }
+
+//practice with arguments and filters
+// Remove all the values after the array
+function destroyer(arr) {
+
+    function removeIt(value){
+        return value != removedItem;
+        
+    }  
+  
+    for(var x = 1; x < arguments.length; x++){  
+        var removedItem = arguments[x];
+        var arr = arr.filter(removeIt);
+    }
+
+  
+  return arr;
+}
