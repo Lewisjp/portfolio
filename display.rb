@@ -8,8 +8,11 @@ Bundler.require
 
 class Display < Sinatra::Base
 
+  get '/' do
+    erb :home
+  end
 
-	get '/' do
+	get '/old-home' do
 	   	@Portfolio = Portfolio.new
 		erb :index
 	end

@@ -1,0 +1,38 @@
+html {
+
+}
+
+#social-jeremy {
+  background-color: #0040ff;
+}
+
+#edu-jeremy {
+  background-color: green;
+}
+
+#culture-jeremy {
+  background: url("/img/background/popculture.gif") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+#details-jeremy {
+  background: white;
+  text-align: center;
+  color: blue;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#details-jeremy br {
+
+}
+
+#image-button {
+  border-radius: 50%;
+  height: 10em;
+}
