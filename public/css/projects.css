@@ -1,13 +1,12 @@
-html {
-
-}
-
 #social-jeremy {
-  background-color: #0040ff;
+  text-align: center;
 }
 
 #edu-jeremy {
-  background-color: green;
+  background: url("/img/background/road-street-forest-fog.jpg") no-repeat center center fixed;
+  background-color: #000000;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #culture-jeremy {
@@ -16,7 +15,9 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+  background-color: #000000;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #details-jeremy {
@@ -28,11 +29,11 @@ html {
   margin-bottom: 3em;
 }
 
-#details-jeremy br {
-
-}
-
 #image-button {
   border-radius: 50%;
   height: 10em;
+}
+
+#image-oval {
+  border-radius: 15%;
 }
