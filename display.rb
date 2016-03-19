@@ -8,7 +8,7 @@ Bundler.require
 
 class Display < Sinatra::Base
 
-  get '/new-home' do
+  get '/code-camp-home' do
     erb :home
   end
 
