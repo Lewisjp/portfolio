@@ -220,3 +220,53 @@ function destroyer(arr) {
   
   return arr;
 }
+
+
+function blackjackCounter(){
+var count = 0;
+
+  function cc(card) {
+    switch(card){
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+      case 6:
+        count += 1;
+        break;
+      case 7:
+      case 8:
+      case 9:
+        break;
+      case 10:
+      case "J":
+      case "Q":
+      case "K":
+      case "A":
+        count -= 1;
+        break;
+    }
+    var decision = "";
+    if(count > 0){
+      decision = "Bet";
+    }else{
+      decision = "Hold";
+    }
+    
+    return count + " " + decision;
+  }
+}
+
+function where(arr, num) {
+  // Put arr in numerical order and find the num placement.
+  // sort is meant for strings so you need to add a function to sort so it works with numbers
+  arr[arr.length] = num;
+  arr = arr.sort(function(a,b){return a-b});
+  
+  
+  for(var x = 0; x < arr.length; x++){
+    if(arr[x] === num){
+      return x;
+    } 
+  }
+}
