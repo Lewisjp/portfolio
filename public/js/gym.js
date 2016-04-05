@@ -270,3 +270,23 @@ function where(arr, num) {
     } 
   }
 }
+
+
+// Find the sum of all the numbers between the smallest and largest
+function sumAll(arr) {
+
+  //order numbers in the array from smallest to largest
+  arr = arr.sort(function(a,b){
+    return a-b;
+  });
+  console.log(arr);
+  
+  var countIt = 0;
+
+  for(var i = arr[0]; i <= arr[arr.length-1]; i++){
+    countIt += i;
+  console.log(countIt);
+  }
+
+  return countIt;
+}
