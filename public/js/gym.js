@@ -290,3 +290,23 @@ function sumAll(arr) {
 
   return countIt;
 }
+
+
+function diffBtArray(arr1, arr2) {
+
+  var finalAnswer = [];
+
+  for(var i = 0; i < arr1.length; i++){
+    if(arr2.indexOf(arr1[i]) == -1){
+      finalAnswer.push(arr1[i]);
+    }
+  }
+
+  for(var x = 0; x < arr2.length; x++){
+    if(arr1.indexOf(arr2[x]) == -1){
+      finalAnswer.push(arr2[x]);
+    }   
+  }
+  
+  return finalAnswer;
+}
