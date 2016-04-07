@@ -312,54 +312,34 @@ function diffBtArray(arr1, arr2) {
 }
 
 
-function convertToRomanNum(num) {
+function convertToRomanNum(num,checkNum,romanLetter) {
   var romanNum = [];
-
-  for(var m = 0; m < Math.floor(num/1000); m++){
-    romanNum.push("M");
-  } 
   
-  num = (num - (Math.floor(num/1000) * 1000));
-
-  for(var d = 0; d < Math.floor(num/500); d++){
-    romanNum.push("D");
-  } 
-  
-  num = (num - (Math.floor(num/500) * 500));
-  
-  for(var c = 0; c < Math.floor(num/100); c++){
-    romanNum.push("C");
-  } 
-
-  num = (num - (Math.floor(num/100) * 100));
-  
-  for(var l = 0; l < Math.floor(num/50); l++){
-    romanNum.push("L");
-  } 
-
-  num = (num - (Math.floor(num/50) * 50));
-  
-  
-  console.log(Math.floor(num/10));
-  for(var x = 0; x < Math.floor(num/10); x++){
-    romanNum.push("X");
+  if(num==0){
+    return;
   }
 
-  num = (num - (Math.floor(num/10) * 10));
-  
-  for(var v = 0; v < Math.floor(num/5); v++){
-    romanNum.push("V");
-  }
-
-  num = (num - (Math.floor(num/5) * 5));
-  
-
+  if(num == (checkNum - 1)){
+    romanNum.push("I"+romanLetter);
+    console.log(romanNum);
+    startingNum = (num - (checkNum-1));
+    console.log(startingNum);
+  }else{
+    for(var v = 0; v < Math.floor(num/checkNum); v++){
+      romanNum.push(romanLetter);
+      console.log(romanNum);
+      console.log(startingNum);
+    }
+    startingNum = (num - (Math.floor(num/checkNum) * checkNum));
+    console.log(startingNum);
   for(var i = 0; i < num; i++){
     romanNum.push("I");
   }
 
-  num = (num - num);  
+  startingNum = (num - num);  
+  console.log(startingNum);
+  }
 
-  
+
   return romanNum.join('');
 }
