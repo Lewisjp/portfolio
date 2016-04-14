@@ -312,6 +312,29 @@ function diffBtArray(arr1, arr2) {
 }
 
 
+function rot13places(str) { 
+
+  var finalStr = [];
+  var fillerText = "a";
+  
+  for(var l = 0; l < str.length ; l++){
+    if(str.charCodeAt(l) < 78 && str.charCodeAt(l) >= 65){
+      fillerText = str.charCodeAt(l)+13; 
+      finalStr.push(String.fromCharCode(fillerText));
+    }else if (str.charCodeAt(l) <= 90 && str.charCodeAt(l) >= 78) {
+      fillerText = str.charCodeAt(l)-13; 
+      finalStr.push(String.fromCharCode(fillerText));
+    }else {
+      fillerText = str.charCodeAt(l);
+      finalStr.push(String.fromCharCode(fillerText));
+    }
+  }
+  
+  return finalStr.join('');
+}
+
+
+
 function convertToRomanNum(num,checkNum,romanLetter) {
   var romanNum = [];
   
