@@ -335,34 +335,36 @@ function rot13places(str) {
 
 
 
-function convertToRomanNum(num,checkNum,romanLetter) {
-  var romanNum = [];
+function convertToRoman(num) {
   
-  if(num==0){
-    return;
+
+var rumLet = ['I','IV','V','IX','X','XL','L','XC','C','CD','D','CM','M'];
+var rumNum = [1,4,5,9,10,40,50,90,100,400,500,900,1000];    
+// after larger num its added
+// before larger num its subtracted
+
+
+  
+var rumResult = '';  
+var temp = 0;  
+var numTotal = num;
+  
+for(var x = rumLet.length - 1; x >= 0; x--){
+  var i = (num/rumNum[x]|0);
+  while(i > 0){
+    rumResult += rumLet[x];
+    i--;
   }
+  
+ 
 
-  if(num == (checkNum - 1)){
-    romanNum.push("I"+romanLetter);
-    console.log(romanNum);
-    startingNum = (num - (checkNum-1));
-    console.log(startingNum);
-  }else{
-    for(var v = 0; v < Math.floor(num/checkNum); v++){
-      romanNum.push(romanLetter);
-      console.log(romanNum);
-      console.log(startingNum);
-    }
-    startingNum = (num - (Math.floor(num/checkNum) * checkNum));
-    console.log(startingNum);
-  for(var i = 0; i < num; i++){
-    romanNum.push("I");
-  }
-
-  startingNum = (num - num);  
-  console.log(startingNum);
-  }
+num -= (rumNum[x] * (num/rumNum[x]|0));
 
 
-  return romanNum.join('');
+}
+  
+
+  
+ console.log(num);
+ return rumResult;
 }
