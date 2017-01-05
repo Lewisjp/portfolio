@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <title>Debbie Harry</title>
+    <!--Bootstrap CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    
+<!-- Enable twitter button for quotes -->
+<script src="http://platform.twitter.com/widgets.js"></script> 
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Blondie JS & CSS files -->
+    <script type="text/javascript" src="/js/blondie.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/blondie.css">
+
+  </head>
+  <body>
+    <div class="container">
+    <br><br>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="nabar-header">
+          <a class="navbar-brand" href="/">Jeremy's Portfolio</a>
+
+<form class="navbar-form navbar-left" role="search" action="https://en.wikipedia.org/wiki/Debbie_Harry" target="_blank">
+      <button type="submit" class="btn btn-default">Debbie Harry's Wiki Bio<span class="glyphicon glyipcon-search pull right"></span></button>
+    </form>
+          
+<form class="navbar-form navbar-left" role="search" action="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+      <button type="submit" class="btn btn-default">Random Wiki<span class="glyphicon glyipcon-search pull right"></span></button>
+    </form>
+          
+    <!-- Here we pull the value by using the form and input names -->     
+    <form name="wikiInput" class="navbar-form navbar-left" role="search" action="javascript:wikiSearch(wikiInput.textInputWiki.value)">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name="textInputWiki">
+      </div>
+      <button type="submit" class="btn btn-default">Search Wikipedia<span class="glyphicon glyipcon-search pull right"></span></button>
+    </form>
+        </div>
+      </div>
+    </nav>
+      
+    <!-- Wiki search results -->    
+    <div class = "row">
+      <div class = "col-xs-12 well wiki-results" align="left">
+     </div>
+    </div>
+
+      
+    <div class="row" id="debbie">
+      <div class="col-md-10 col-md-offset-1 col-sm-12" >
+        <center>
+          <a name="blondie"></a> 
+          <p><h1>Debbie Harry</h1></p>
+          <p><strong>Singer, Songwriter, Actress</strong></p<
+        </center>
+      </div>
+          <div class="col-md-10 col-md-offset-1 col-sm-10">
+            <center><div class="col-md-6 col-md-offset-3 col-sm-10" id="white"><img src="http://jeremylewis.herokuapp.com/img/stock/blondie.png" class="img-responsive" id="snapshot"><br>Blondie - "Heart of Glass"</div></center>
+              <div class="col-md-10 col-md-offset-1 col-sm-12" >
+                <br><p><strong>Deborah Ann "Debbie" Harry </strong><i> (born July 1, 1945)</i> is an American singer-songwriter and actress, best known as the lead singer of the new wave and punk rock band Blondie. She recorded several worldwide number one singles with Blondie during the 1970s and 1980s.</p>
+                <center>
+                  <p><h2>My Top 5 Favorite Debbie Harry Songs</h2></p></center>
+                <ul>
+                  <li><strong>1978</strong> - <a href="https://www.youtube.com/watch?v=WGU_4-5RaxU" target="_blank">Heart of Glass</a> - No.1 in the UK and was the second highest selling single of 1979.</li><br>
+                  <li><strong>1979</strong> - <a href="https://www.youtube.com/watch?v=O_WLw_0DFQQ" target="_blank">Atomic</a> - The song was produced as a mixture of new wave, rock and disco.</li><br>
+                  <li><strong>1980</strong> - <a href="https://www.youtube.com/watch?v=StKVS0eI85I" target="_blank">Call Me</a> - "Call Me" was number one for six consecutive weeks on the Billboard Hot 100 chart.</li><br>
+                  <li><strong>1980</strong> - <a href="https://www.youtube.com/watch?v=ppYgrdJ0pWk" target="_blank">The Tide Is High</a> - Originally produced by Duke Reid and performed by the Jamaican group the Paragons, with John Holt as lead singer.</li><br>
+                  <li><strong>1980</strong> - 
+                    <a onclick="changeSong()" href="javascript:void(0);">
+                    Rapture</a> - "Rapture" is a combination of disco, funk, and hip hop.</li><br>
+                </ul>
+              </div>
+              </center>
+    <div class="row">
+          <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+<!--    <center><div id="player"></div></center> -->
+              <div class="col-md-8 col-md-offset-2 col-sm-10 well">
+              
+<br>      
+  <h3><i><div id="debbie-quote">I do know the effect that music still has on me - I'm completely vulnerable to it. I'm seduced by it.
+    </div></i></h3><h4 align="right"> - Debbie Harry</h4>
+  <div>
+    <button type="button" id="newQuote" align="right">
+      Another quote
+    </button><br><br>
+    <div class="tweet-quote">    
+      <a href="http://twitter.com/share"
+      class="twitter-share-button"
+      data-size="large"
+      data-text="I do know the effect that music still has on me - I'm completely vulnerable to it. I'm seduced by it."
+      data-count="none"></a>
+    </div>
+
+    
+  </div>
+
+      
+</div>
+
+
+
+
+
+
+    
+            <div class="col-md-8 col-md-offset-2 col-sm-10">
+<!-- future youtube videos here --> 
+            </div>
+          </div>
+    </div>
+    </div>
+    <div id="footer">
+      <hr>
+        <center>Written and coded by <a href="lewisjpaul.tumblr.com" target="_blank">Jeremy Lewis</a> for the "Build a Tribute Page" challenge using Wiki facts. </center>
+    </div>
+  </body>
+  
+</html>
