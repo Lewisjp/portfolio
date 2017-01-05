@@ -1,3 +1,10 @@
+
+#preview {
+  background-color:white;
+  opacity: .9;
+  text-align: center;
+}
+
 #social-jeremy {
   background: #66ccff;
   background: url("/img/background/sky.jpg") no-repeat center center fixed;
@@ -54,5 +61,6 @@
   display:inline-block;
   margin-right: 5px;
 }
+
 
 form { display: inline-block; }

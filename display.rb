@@ -34,5 +34,13 @@ class Display < Sinatra::Base
     send_file 'views/imagine.html'
   end
   
+  get '/blondie' do
+    send_file 'views/blondie.html'
+  end
+
+  get '/twitch' do
+    send_file 'views/twitch.html'
+  end
+  
 
 end

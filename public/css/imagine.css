@@ -1,0 +1,18 @@
+body {
+  background: url("/img/background/library.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #828282;
+}
+
+p {
+  background-color: white;
+  opacity: 0.7;
+  color: black;
+}
+
+h1 {
+  color:white;
+}
