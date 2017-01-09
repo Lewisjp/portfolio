@@ -2,20 +2,36 @@
 <html>
   <head>
     <title>Lewis J. Paul's Portfolio</title>
-  </head>
-  <body>
-  <link rel="stylesheet" type="text/css" href="/css/projects.css">
-  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <!-- Bootstrap CDN-->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CDN -->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+
+     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+    <!-- Page JS & CSS -->
+    <script type="text/javascript" src="/js/home.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/projects.css">
+
+  </head>
+  <body>
+
 
 <div class="row" id="details-jeremy">
   <h1>I am who I am...</h1>
@@ -42,14 +58,14 @@
     <br>
     <a href="http://sevendirtywords.herokuapp.com/"><img src="/img/stock/george.jpg" id="image-button" alt="Twitter scan for George Carlin's 7 Dirty Words"></a>
     <br><br>
-    Search your favorite twitter accounts to check for George Carlin's 7 Dirty Word.
+    Search your favorite twitter accounts to check for George Carlin's 7 Dirty Word (using the Twitter API).
     <br><br>
   </div>
   <!-- GoT Game -->
    <div id="preview" class="col-md-offset-1 col-md-3">
     <br>
       <a href="http://game-of-wits.herokuapp.com/"><img src="/img/stock/got.jpg" id="image-button" alt="Game of Thrones Memory Game" class="img-responsive"></a>
-    <br><br>
+    <br>
     How well do you remember classic lines from Game of Thrones?  Take the memory quiz to find out!
     <br><br>
   </div>
@@ -62,7 +78,17 @@
     <br><br>
   </div>
 </row><row>
+  <!-- Original Portfolio Slideshow -->
+  <div id="preview" class="col-md-offset-1 col-md-3">
+    <br>
+    <a name="lion-me"></a>
+    <a href="#lion-me" data-toggle="modal" data-target="#myModal"><img src="/img/photo_two.png" class="img-responsive" alt="Picture of a lion"></a>
+    <br>
+    Curious about the original version of my portfolio?  Click the lion above to see a slideshow of the first design. 
+    <br>
 
+
+  </div>
   <!-- Blondie -->
   <div id="preview" class="col-md-offset-1 col-md-2">
     <br>
@@ -84,5 +110,37 @@
 
 <!-- Footer -->
 
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Original Portfolio - Slideshow</h4>
+        </div>
+        <div class="modal-body">
+          <p>My original portfolio site would randomly load an image to spotlight a project.</p>
+          <p>On the right hand side there used to be a short bio and below that a menu dropdown listing different projects.</p>
+          <p>To see different screenshots, click on the image below.<br>To close this modal, click the x on the upper right hand corner, the close button on the bottom left corner or anywhere outside this box.</p>
+          <div id="wrapper">
+            <div id="imageContainer">
+              <img src="/img/stock/old-home-1.png" alt="screenshot of original home page" class="active img-responsive">
+              <img src="/img/stock/old-home-2.png" alt="screenshot of original home page"
+              class="img-responsive inactive">
+              <img src="/img/stock/old-home-3.png" alt="screenshot of original home page"
+              class="img-responsive inactive">
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      </div>
+    </div>
   </body>
 </html>
