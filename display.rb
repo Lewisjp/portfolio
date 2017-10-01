@@ -42,5 +42,8 @@ class Display < Sinatra::Base
     send_file 'views/twitch.html'
   end
   
+  get '/map' do
+    send_file 'views/map.html'
+  end
 
 end
