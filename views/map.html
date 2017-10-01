@@ -1,0 +1,102 @@
+<html>
+<head>
+  <title>LandNav Planner</title>
+    <!--Bootstrap CDN -->
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="dropdownMenu1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">LandNav Planner</a>
+    </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about" data-toggle="modal" data-target="#aboutModal">About</a></li>
+          <li><a href="#contact" data-toggle="modal" data-target="#contactModal">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+             <li class="dropdown-header">Restricted Terrain At</li>
+             <li id="restricted_degree_input"><center><!-- get degrees here --> degrees</center></li>
+             <li class="dropdown-header">Severely Restricted</li>
+             <li id="severely_restricted_degree_input"><center><!-- get degrees here --> degrees</center></li>
+             <!-- button to update map overlay -->
+             <li><p><center><button type="button">Update Map</button></center></p></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Saved Locations</li>
+              <!-- Mount Everest, 27.9878° N, 86.9250° E -->
+              <li><a href="#">Location 1</a></li>
+              <!-- Sugarbush Ski Resort, VT  44.1361071,-72.894423 --> 
+              <li><a href="#">Location 2</a></li>
+              <!-- Nuristan, Afghanistan 35.4103623,71.0588515 -->
+              <li><a href="#">Location 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div> 
+    </div>
+  </nav>
+
+
+<!-- Modal details should be placed right before the end of the body -->
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Contact Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Contact</h4>
+        </div>
+        <div class="modal-body">
+          <!-- We can create a contact gmail account later --> 
+          <p>You can reach us by email at ... </p>
+          <h4>About us</h4>
+          <p><b>Jeremy Lewis, CEO</b></p>
+          <p>Jeremy Lewis worked at the start-up Everwise. There he managed customer feedback, proposing product improvements and configuring the application to meet client needs.  His duties included quality assurance of the platform in preparation for releases of software updates to ensure data integrity and a seamless customer experience.  Before working at Everwise, Jeremy worked at MediaOcean as a Support Engineer and at UBS as a Client Resolution Specialist.</p>
+          <p><b>Nikhil Sinha, CTO</b></p>
+          <p>Nikhil Sinha is a software developer with over ten years of experience.  He has worked in both the financial sector and legal technology sector.  As a Lead Software Developer and Architect at Omnivere, he is in charge of the Direct E-Discovery Platform, including the front-end website and the search systems behind it.  He has an interest in computer graphics and is currently learning OpenCV, an image and video manipulation software library.</p>
+          <p>Prior to working at Omnivere, Nick worked at a variety of financial firms, including Thomson-Reuters, Credit-Suisse, and Susquehanna International Group.  Most of this was spent building distributed risk software.  Before starting in the financial sector, he spent a summer at Electronic Arts, working on the video game adaptation of James Bond: From Russia with Love.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Modal -->
+  <div class="modal fade" id="aboutModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- About Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">About LandNav Planner</h4>
+        </div>
+        <div class="modal-body">
+          <p>Travel through uncertain terrain conditions risks delays and failure of reaching one's objective.</p><p>Our attention to detail helps travelers better prepare movement through their environment.  Let us help your team get to the party and back home safely.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
