@@ -51,25 +51,25 @@ function displayWeather(reportJSON, reportPlace, weatherURL){
   overAll(todayDate, "dayone", weatherURL);
   setTimeout(function(){
     checkhour(reportJSON, todayDate, "dayone");
-  }, 500);
+  }, 1000);
 
   $("#daytwo").append("<center><strong>"+tomorrowDate.toDateString()+"</strong></center>"+ "<br>");
   overAll(tomorrowDate, "daytwo", weatherURL);
   setTimeout(function(){
     checkhour(reportJSON, tomorrowDate,"daytwo");
-  }, 500);
+  }, 1000);
 
   $("#daythree").append("<center><strong>"+thirdDate.toDateString()+"</strong></center>"+ "<br>");
   overAll(thirdDate, "daythree", weatherURL);
   setTimeout(function(){
   checkhour(reportJSON, thirdDate, "daythree");
-  }, 500);
+  }, 1000);
 
   $("#dayfour").append("<center><strong>"+fourthDate.toDateString()+"</strong></center>"+ "<br>");
   overAll(fourthDate, "dayfour", weatherURL);
   setTimeout(function(){
   checkhour(reportJSON, fourthDate, "dayfour");
-  }, 500);
+  }, 1000);
  
 }
 
