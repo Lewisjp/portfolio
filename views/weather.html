@@ -1,0 +1,93 @@
+<html>
+<head>
+  <title>Weather for the 16th district</title>
+    <!--Bootstrap CDN -->
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="/js/weather.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/weather.css">
+</head>
+<body>
+
+  <!-- <div id="loading"></div> -->
+  <!-- navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="dropdownMenu1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#map" onclick="loadMap()">Weather in the 16th</a>
+    </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#bronx" onclick="loadBronx()">Bronx</a></li>
+          <li><a href="#bronx" onclick="loadWestchester()">Westchester</a></li>
+          <li><a href="#map" data-toggle="modal" onclick="loadMap()">Map</a></li>
+          <li><a href="#about" data-toggle="modal" data-target="#aboutModal">About</a></li>
+          <li><a href="#contact" data-toggle="modal" data-target="#contactModal">Contact</a></li>
+        </ul>
+      </div> 
+    </div>
+  </nav>
+
+<!-- Modal details should be placed right before the end of the body -->
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Contact Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Contact</h4>
+        </div>
+        <div class="modal-body">
+          <!-- We can create a contact gmail account later --> 
+          <p>If you have any questions, please email me at <a href="mailto:jeremy@jonathanlewisforcongress.com">jeremy@jonathanlewisforcongress.com</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Modal -->
+  <div class="modal fade" id="aboutModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- About Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Weather in the 16th District</h4>
+        </div>
+        <div class="modal-body">
+          <p>This page provides quick weather information for <a href="https://www.govtrack.us/congress/members/NY/16" target="_blank">New York’s 16th Congressional District.</a>  If you're curious about the weather conditions between the hours of 9 AM and 9 PM, this is the app for you.  In 2018, this district covers parts of the Bronx and Westchester.  Please view the <a href="https://www2.census.gov/geo/maps/cong_dist/cd113/cd_based/ST36/CD113_NY16.pdf" target="_blank">113th Congressional District Census Map</a> for more details.</p>
+          <p>We built this page using the <a href="https://www.wunderground.com/?apiref=6f834dca663d6f53" target="_blank">Weather Underground API.</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Buffer -->
+  <br><br><br>
+  <!-- Content -->
+  <div class="container">
+    <div id="row">
+      <img src="/img/background/map16district.png" class="img-responsive">
+    </div>
+  </div>
+
+<!-- Temp JS placeholder-->
+
+
+</body>
+</html>

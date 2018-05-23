@@ -46,4 +46,8 @@ class Display < Sinatra::Base
     send_file 'views/map.html'
   end
 
+  get '/weather' do
+    send_file 'views/weather.html'
+  end
+
 end
