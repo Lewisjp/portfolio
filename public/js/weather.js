@@ -45,7 +45,7 @@ function displayWeather(reportJSON, reportPlace, weatherURL){
   var tomorrowDate = new Date().addHours(24);
   var thirdDate = new Date().addHours(48);
   var fourthDate = new Date().addHours(72);
-  document.getElementById("row").innerHTML = "<center><H1>Weather Forecast for "+reportPlace+"</H1></center><div id='dayone' class='col-3 col-md-offset-1'><div id='daily'></div><div id='hourly'></div></div><div id='daytwo' class='col-3 col-md-offset-1'><div id='daily'></div><div id='hourly'></div></div><div id='daythree' class='col-3 col-md-offset-1'><div id='daily'></div><div id='hourly'></div></div><div id='dayfour' class='col-3 col-md-offset-1'><div id='daily'></div><div id='hourly'></div></div>";
+  document.getElementById("row").innerHTML = "<center><H1>Weather Forecast for "+reportPlace+"</H1></center><div id='dayone' class='col-3 col-md-offset-1'><div id='daily'></div><div id='hourly'></div></div><div id='daytwo' class='col-3 col-md-offset-1'><div id='daily'></div><div id='hourly'></div></div><div id='daythree' class='col-3 col-md-offset-1'><div id='daily'></div><div id='hourly'></div></div><div id='dayfour' class='col-3'><div id='daily'></div><div id='hourly'></div></div>";
 
   overAll(todayDate, "dayone", weatherURL);
   checkhour(reportJSON, todayDate, "dayone");
